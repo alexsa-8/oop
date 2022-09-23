@@ -14,6 +14,8 @@ public class human {
         this.town=town;
         this.yearOfBirth=yearOfBirth;
         this.job=job;
+    }
+    public void messagePerson(String name, String town, int yearOfBirth, String job) {
         System.out.println("Привет! Меня зовут " + name + ". Я из города "
                 + town + ". Мне " + yearOfBirth + " лет. Я работаю на должности " + job + ". Будем знакомы!");
     }
