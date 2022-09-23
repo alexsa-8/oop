@@ -5,16 +5,15 @@ public class Main {
         human anay = new human("Аня", "Москва", 2022 - 29);
         human katay = new human("Катя", "Калининград", 2022 - 28);
         human artem = new human("Артём", "Москва", 2022 - 27);
-
-        human maxim1 = new human("Максим", "Минск", 35, "бренд-менеджер");
-        human anay1 = new human("Аня", "Москва", 29, "методист образовательных программ");
-        human katay1 = new human("Катя", "Калининград", 28, "продакт-менеджер");
-        human artem1 = new human("Артём", "Москва", 27, "директор по развитию бизнеса");
-
-        maxim1.messagePerson("Максим", "Минск", 35, "бренд-менеджер");
-        anay1.messagePerson("Аня", "Москва", 29, "методист образовательных программ");
-        katay1.messagePerson("Катя", "Калининград", 28, "продакт-менеджер");
-        artem1.messagePerson("Артём", "Москва", 27, "директор по развитию бизнеса");
+        System.out.println();
+        human maxim1 = new human("Максим", "Минск", -35, "бренд-менеджер");
+        human anay1 = new human("Аня", null, 29, "методист образовательных программ");
+        human katay1 = new human(null, "Калининград", 28, "продакт-менеджер");
+        human artem1 = new human("Артём", "Москва", 27, null);
+        maxim1.messagePerson();
+        anay1.messagePerson();
+        katay1.messagePerson();
+        artem1.messagePerson();
 
     }
 }
